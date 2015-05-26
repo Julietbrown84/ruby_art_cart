@@ -1,3 +1,5 @@
+<%= render "renders/menu_nav_top" %>
+
 <h1>Welcome</h1>
 <h1>Art Cart</h1>
 
@@ -10,24 +12,28 @@
 
 <div id="products">
   <h2> products </h2>
+  <ul  id='products'>
   <% @products.each do |product| %>
+
      <%= render "product_row", product: product, order_item: @order_item %>
     <li>
-      <div class="bottom_tab">
-        <div class="vertalign">
-            <%= link_to product.name, product_path(product.id), :class => "name" %>
-              <strong><%= product.name %></strong>
-              <%= simple_format(product.description) %>
-              <em><%= product.price %></em>
-              <br />
-            </ul>
-            <li style="background-image: url('<%= product.image_url %>')">
-          <a href= "/products/:id">
-          <img src='<%=product.image_url%>' />
-           </a>
+    <!--   <div class="bottom_tab">
+        <div class="vertalign"> -->
+
+    <%= link_to product.name, product_path(product.id), :class => "name" %>
+      <strong><%= product.name %></strong>
+      <%= simple_format(product.description) %>
+      <em><%= product.price %></em>
+      <br />
+           
+   <li style="background-image: url('<%= product.image_url %>')">
+
+   <a href= "/products/:id">
+     <img src='<%=product.image_url%>' />
+   </a>
       <%= link_to "Details", product_path(product) %>
     </li>
-  </div>
- </div>
-</div>
-<% end %>
+
+   </div>
+  <% end %>
+ </ul>

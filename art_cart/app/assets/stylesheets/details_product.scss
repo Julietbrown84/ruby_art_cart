@@ -1,0 +1,112 @@
+$amber: #ffbf00;
+$color_alto_approx: #dddddd;
+$color_chartreuse_approx: #74df00;
+$white: #fff;
+
+//urls
+//$url_0: url(bootstrap/bootstrap.min.css);
+//$url_1: url(bootstrap-override.css);
+//$url_2: url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+
+//@import $url_0;
+//@import $url_1;
+//@import $url_2;
+
+.gold {
+	color: $amber;
+}
+.product {
+	border: 1px solid $color_alto_approx;
+	height: 321px;
+}
+.product>img {
+	max-width: 230px;
+}
+.product-rating {
+	font-size: 20px;
+	margin-bottom: 25px;
+}
+.product-title {
+	font-size: 20px;
+}
+.product-desc {
+	font-size: 14px;
+}
+.product-price {
+	font-size: 22px;
+}
+.product-stock {
+	color: $color_chartreuse_approx;
+	font-size: 20px;
+	margin-top: 10px;
+}
+.product-info {
+	margin-top: 50px;
+}
+.content-wrapper {
+	max-width: 1140px;
+	background: $white;
+	margin: 0 auto;
+	margin-top: 25px;
+	margin-bottom: 10px;
+	border: 0;
+	//Instead of the line below you could use @includeborder-radius($radius, $vertical-radius)
+	border-radius: 0;
+}
+.container-fluid {
+	max-width: 1140px;
+	margin: 0 auto;
+}
+.view-wrapper {
+	float: right;
+	max-width: 70%;
+	margin-top: 25px;
+}
+.container {
+	padding-left: 0;
+	padding-right: 0;
+	max-width: 100%;
+}
+.service1-items {
+	padding: 0;
+	float: left;
+	position: relative;
+	overflow: hidden;
+	max-width: 100%;
+	height: 321px;
+	width: 130px;
+}
+.service1-item {
+	height: 107px;
+	width: 120px;
+	display: block;
+	float: left;
+	position: relative;
+	padding-right: 20px;
+	border-right: 1px solid $color_alto_approx;
+	border-top: 1px solid $color_alto_approx;
+	border-bottom: 1px solid $color_alto_approx;
+	> img {
+		max-height: 110px;
+		max-width: 110px;
+		opacity: 0.6;
+		//Instead of the line below you could use @includetransition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: all .2s ease-in;
+		&:hover {
+			cursor: pointer;
+			opacity: 1;
+		}
+	}
+}
+.service-image-left {
+	padding-right: 50px;
+	> center > img {
+		max-height: 155px;
+	}
+}
+.service-image-right {
+	padding-left: 50px;
+	> center > img {
+		max-height: 155px;
+	}
+}

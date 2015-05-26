@@ -9,3 +9,70 @@ div.vertalign > a.title { font-size: 25px; display: inline-block; margin-bottom:
 div.vertalign > h3 { margin-bottom: 2px; }
 div.vertalign > form > input { font-size: 12px; }
 */
+
+html, body {
+  height: 100%;
+  position: relative;
+}
+
+
+body {
+  font-family: Lato;
+  text-align: center;
+  padding: 20px;
+}
+
+h1, h2, h3
+  margin: 0;
+}
+
+h1 {
+  font-size: 60px;
+}
+
+h4 {
+  font-size: 20px;
+  margin: 20px;
+}
+img {
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a.link {
+  text-decoration: none;
+  border-bottom: 1px solid black;
+  color: black;
+  transition: 0.5s;
+}
+
+a.link:hover {
+  border-color: transparent;
+}
+
+#error_explanation {
+  font-size: 12px;
+  color: red;
+}
+
+
+span.life-count {
+  font-size: 14px;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  padding: 5px;
+  position: relative;
+  bottom: 2px;
+}
+/*ul#animals li {
+  border: 2px solid black;
+  padding: 10px;
+  width: 500px;
+  margin: 20px auto;
+}

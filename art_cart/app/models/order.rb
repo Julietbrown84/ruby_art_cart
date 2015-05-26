@@ -1,7 +1,8 @@
 class Order < ActiveRecord::Base
       # belongs_to :user
+
       belongs_to :order_status
-      has_many :order_items
+      has_many :order_items, :dependent => :destroy
       before_create :set_order_status
       before_save :update_subtotal
       has_many :products

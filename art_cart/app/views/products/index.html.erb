@@ -1,5 +1,8 @@
 <h1>Welcome</h1>
 <h1>Art Cart</h1>
+
+<h3 class="text-center">Art Cart Products for Sale</h3>
+
 <nav>
   <a class="link" href="">cart</a> /
   <a class="link" href="/pages">Logout</a>
@@ -8,6 +11,7 @@
 <div id="products">
   <h2> products </h2>
   <% @products.each do |product| %>
+     <%= render "product_row", product: product, order_item: @order_item %>
     <li>
       <div class="bottom_tab">
         <div class="vertalign">

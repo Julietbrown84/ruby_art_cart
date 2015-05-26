@@ -1,0 +1,11 @@
+#products { background-image: url('http://julietbrowncreative.weebly.com/uploads/3/1/6/3/31635653/8021899_orig.jpg'); }
+#products_content { margin: 100px auto 40px auto; max-width: 950px; }
+#products_content > h2 { font-size: 60px; border-bottom: 1px solid white; border-top: 1px solid white; padding-bottom: 12px;  margin-bottom: 20px;}
+#products_content > li { position: relative; display: inline-block; width: 250px; height: 250px; list-style-type: none; border: 1px solid white; margin: 10px 10px 0 0; background-size: cover;}
+.bottom_tab { position: absolute; bottom: 0; right: 0; left: 0; height: 40%; background: rgba(0,0,0,0.7); border-top: 1px solid white ;}
+.bottom_tab { position: absolute; bottom: 0; right: 0; left: 0; height: 40%; background: rgba(0,0,0,0.7); border-top: 1px solid white ;}
+/*div.vertalign { position: relative; top: 50%; transform: translateY(-50%); }
+div.vertalign > a.title { font-size: 25px; display: inline-block; margin-bottom: 5px; }
+div.vertalign > h3 { margin-bottom: 2px; }
+div.vertalign > form > input { font-size: 12px; }
+*/

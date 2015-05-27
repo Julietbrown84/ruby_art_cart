@@ -1,5 +1,4 @@
 class OrderItem < ActiveRecord::Base
-
   belongs_to :product
   belongs_to :order
 
@@ -7,11 +6,11 @@ class OrderItem < ActiveRecord::Base
   validate :product_present
   validate :order_present
 
-   before_save :finalize
+  before_save :finalize
 
   def unit_price
     if persisted?
-      self[:price]
+      self[:unit_price]
     else
       product.price
     end
@@ -35,9 +34,8 @@ private
   end
 
   def finalize
-    self[:price] = unit_price
-    self[:total_price] = quantity * self[:price]
+    self[:unit_price] = unit_price
+    self[:total_price] = quantity * self[:unit_price]
   end
 end
-
 

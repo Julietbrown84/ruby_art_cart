@@ -1,9 +1,9 @@
 class Order < ActiveRecord::Base
-      # belongs_to :user
+      belongs_to :user
       belongs_to :order_status
       has_many :order_items
       before_create :set_order_status
-      # before_save :update_subtotal
+       before_save :update_subtotal
 
       def subtotal
         order_items.collect { |order_item| order_item.valid? ? (order_item.quantity * order_item.unit_price) : 0 }.sum
